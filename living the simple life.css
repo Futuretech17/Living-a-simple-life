@@ -1,0 +1,104 @@
+body { 
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* ****************
+  Topography
+***************** */
+
+.title h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2; 
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* ****************
+  layout
+***************** */
+.container {
+    width:90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #f8f8f8;
+    opacity: 0.;
+    padding: 2em 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+
+nav li {
+    
+    margin-left: 2rem;
+    
+}
+
+nav a {
+     text-decoration: none;
+     color: #707070;
+     font-weight: 700;
+     padding: .25em 0;
+    
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #1792d2;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width:690px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        ;
+        width:100%;
+    }
+    header {
+        text-align: center;
+    }
+    nav li {
+        padding: 1rem;
+        margin: auto;
+        
+    }
+    nav a {
+        width:100%;
+    }
+}
